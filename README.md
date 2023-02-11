@@ -1,6 +1,6 @@
 # Threat Dictionary
 
-Code for the paper "When danger strikes: A linguistic tool for tracking America’s collective response to threats"
+Code for the paper [When danger strikes: A linguistic tool for tracking America’s collective response to threats](https://www.pnas.org/doi/10.1073/pnas.2113891119)
 
 ```
 Title:      generate_threat_dictionary.py
@@ -10,7 +10,7 @@ Date:       12/06/2019
 
 
 ### Paper
-Choi, Virginia K., Snehesh Shrestha, Xinyue Pan, and Michele J. Gelfand. "When danger strikes: A linguistic tool for tracking America’s collective response to threats." Proceedings of the National Academy of Sciences 119, no. 4 (2022): e2113891119.
+Choi, Virginia K., Snehesh Shrestha, Xinyue Pan, and Michele J. Gelfand. "[When danger strikes: A linguistic tool for tracking America’s collective response to threats](https://www.pnas.org/doi/10.1073/pnas.2113891119)." Proceedings of the National Academy of Sciences 119, no. 4 (2022): e2113891119.
 
     
 ### Description:
