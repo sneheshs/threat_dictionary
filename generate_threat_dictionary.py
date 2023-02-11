@@ -101,9 +101,7 @@ CORPUS 		            =   'GloveTwitter' #'GloveInternet' 'GloveTwitter' 'GloveWi
 
 TOP_N_WORDS_PER_SEED    =   100     # Top n words you wish to generate per seed word
 CLUSTER_ASSIGN_FACTOR   =   0.1     # Take 10% of the list of words to be the number of clusters
-TOP_N_PER_CLUSTER       =   10      # Final top N words per cluster
-PLOT_SHOW_ON_SCREEN     =   True    # For showing plot on screen
-PLOT_SAVE_TO_FILE       =   False   # For saving plot into file
+TOP_N_PER_CLUSTER       =   10      # Final top N words per cluster (not used in this paper)
 EXT                     =   '.txt'
 ROOT_PATH               =   'data/'
 INPUT_PATH              =   ROOT_PATH + 'seedwords/'
@@ -127,7 +125,7 @@ List of files containing the seed words separated by comma ['file1', 'file2', ..
 List your seed words in the files separated by new line
 Only use single word seed words (some hyphenated words are allowed as long as they exists in the corpus vocabulary)
 '''
-FILES                   =   ['Seed_General_Threat']
+FILES                   =   ['YOUR_SEED_FILE_NAME']
 path_output             =   'results/'
 #--------------------------------------------------
 ## Step 1: Generate threat words clusters

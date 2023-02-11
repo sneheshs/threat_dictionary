@@ -15,7 +15,7 @@ Choi, Virginia K., Snehesh Shrestha, Xinyue Pan, and Michele J. Gelfand. "[When 
     
 ### Description:
 
-This code is for the generation of the threat dictionary as described in the paper. To understand the societal effects of broadcasted threat-relevant language, we developed a threat dictionary using natural language processing (NLP) techniques. Table S1 provides the pseudocode outlining the steps in the word generation and pruning process that went into developing the threat dictionary. In developing this linguistic measure of threat words, we leveraged computational models that map out words with semantic similarity in a high-dimensional space based on their co-occurrence in each corpus, also commonly referred to in the NLP community as word embeddings. In this paper, we applied several of GloVe's word embedding models (Pennington et al., 2014), pre-trained on the following corpora: (i) Wikipedia articles, (ii) Twitter posts, and (iii) Common Crawl web page. Additionally, with word embeddings, it is possible to specify your search for the number of candidate words that are most spatially proximal to target words (i.e., the top N words). The top 100 words per model were extracted per seed word, including “threat” and related terms such as “danger” and “warning.” After this generation of a more expansive list of threat-relevant words, common words such as “the,” “of,” “all,” etc. were filtered out. The remaining words were clustered with spectral clustering to identify majority inapposite word-clusters unrelated to threats (e.g., foreign words, numeric form of years, and named entities) via a process of full inter-rater agreement by the study authors. Words that converged across the filtered outputs of all three models produced the final threat dictionary. All terms found in the dictionary are listed in Table S2. Following these measurement development steps; the threat dictionary was applied toward building indices for measuring threat levels over time from two timestamped and geolocated corpora (U.S. newspapers and tweets during COVID-19). See paper for more details.
+This code is for the generation of the threat dictionary as described in the paper. To understand the societal effects of broadcasted threat-relevant language, we developed a threat dictionary using natural language processing (NLP) techniques. Table S1 in the paper provides the pseudocode outlining the steps in the word generation and pruning process that went into developing the threat dictionary. In developing this linguistic measure of threat words, we leveraged computational models that map out words with semantic similarity in a high-dimensional space based on their co-occurrence in each corpus, also commonly referred to in the NLP community as word embeddings. In this paper, we applied several of GloVe's word embedding models (Pennington et al., 2014), pre-trained on the following corpora: (i) Wikipedia articles, (ii) Twitter posts, and (iii) Common Crawl web page. Additionally, with word embeddings, it is possible to specify your search for the number of candidate words that are most spatially proximal to target words (i.e., the top N words). The top 100 words per model were extracted per seed word, including “threat” and related terms such as “danger” and “warning.” After this generation of a more expansive list of threat-relevant words, common words such as “the,” “of,” “all,” etc. were filtered out. The remaining words were clustered with spectral clustering to identify majority inapposite word-clusters unrelated to threats (e.g., foreign words, numeric form of years, and named entities) via a process of full inter-rater agreement by the study authors. Words that converged across the filtered outputs of all three models produced the final threat dictionary. All terms found in the dictionary are listed in Table S2 in the paper. Following these measurement development steps; the threat dictionary was applied toward building indices for measuring threat levels over time from two timestamped and geolocated corpora (U.S. newspapers and tweets during COVID-19). See paper for more details.
 
 ### Prerequisite:
 
@@ -26,12 +26,12 @@ This code is for the generation of the threat dictionary as described in the pap
 ### Usage:
 
 1. Download the GloVe word embeddings from https://nlp.stanford.edu/projects/glove/ and unzip them into the data folder
-2. Install the required packages using pip install -r requirements.txt
-3. Modify the FILES variable to include the list of files of the seed words you wish to generate your dictionary for
+2. Install the required packages using `pip install -r requirements.txt`
+3. Modify the `FILES` variable to include the list of files of the seed words you wish to generate your dictionary for
 4. Run the code in three steps as described below.
-5. Step 1: Generate words clusters
-6. Step 2: Manually filter the clusters as indicated in the paper
-7. Step 3: Generate the final dictionary across all corpus
+5. `Step 1`: Generate words clusters
+6. `Step 2`: Manually filter the clusters as indicated in the paper
+7. `Step 3`: Generate the final dictionary across all corpus
 
 
 ### Citation (Bibtex):
